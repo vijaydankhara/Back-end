@@ -2,7 +2,7 @@
     font-family: Arial, sans-serif;
     font-size: 240px;
     font-weight: bold;
-    color: #f5f3f3;
+    color: #000000;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 1 1 5px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #f47843,#260bf2, #77d709);
+    background: linear-gradient(to right, #db47f9,#15fbfb, #f3f706);
     color: #fff;
   }
   
