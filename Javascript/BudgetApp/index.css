@@ -1,0 +1,19 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .input-section input {
+    margin-bottom: 10px;
+  }
+  
+  .expense-list li {
+    margin-bottom: 5px;
+  }
+  
+  .total-section {
+    margin-top: 20px;
+  }
+  
+  

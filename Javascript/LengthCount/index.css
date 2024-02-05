@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #eb1e1e, #120eef);
+    color: #fff;
+  }
+  
+  #container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  textarea, button {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+  
+  #result {
+    background:rgb(31, 236, 219);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+
+  input[type="button"] 
+{
+    width: 100%;
+    padding: 20px 40px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 120px;
+    border: 2px solid rgb(11, 11, 11);
+}
+
