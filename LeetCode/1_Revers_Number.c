@@ -2,8 +2,12 @@
 
 int main()
 {
-    int number = 123;
+    int number;
+    // int number = 123;
     int x = 0;
+    
+    printf("Enter a number: ");
+    scanf("%d", &number);
     
     while(number != 0)
     {
