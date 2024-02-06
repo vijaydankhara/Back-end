@@ -2,9 +2,7 @@
 // mongod
 // mongosh
 // use ecommerce
-// show dbs 
-
-
+// show dbs
 
 // 2
 // db.customers.insertMany([
@@ -30,8 +28,6 @@
 //         "password": "rohit@4545"
 //     },
 //     ]);
-    
-   
 
 // db.products.insertMany([
 //     {
@@ -60,18 +56,6 @@
 //     },
 //     ]);
 
-
-
-
-
-
-
-
-
-
-
-
-
 // db.orders.insertMany([
 //     {
 //         "order_id": "ORD01",
@@ -92,11 +76,6 @@
 //         "total_price":149999
 //     },
 //     ]);
-
-
-
-
-
 
 // db.order_items.insertMany([
 //     {
@@ -123,85 +102,113 @@
 //     ]);
 
 // 4
- // db.customers.find()
+//   db.customers.find()
 
 // 5
 // db.products.find()
 
 // 6
 // db.orders.find()
-    
-// 7    
+
+// 7
 // db.order_items.find()
 
-// // 8
-// db.customers.aggregate(
+////////////////////////////////////////////////////////
+// 8
+
+// db.orders.aggregate([
 //     {
 //         $lookup: {
-//               from: "customers",
-//               localField: "customer_id",
-//               foreignField: "customer_id",
-//               as: "customer"
-//              }
-    
-//     $lookup: {
-//           from: "orders",
-//           localField: "order_items",
-//           foreignField: "order_items",
-//           as: "order"
-//          }
-//     }
-//     );
-    
+//             from: "customers",
+//             localField: "customer_id",
+//             foreignField: "customer_id",
+//             as: "customer"
+//         }
+//     },
 
-// 9
-// db.products.updateOne({ product_id: "P0001" },{ $set: { product_quantity: 10 } } );    
-// 
+//     {
+//         $unwind: "$customer"
+//     },
 
+//     {
+//         $lookup: {
+//             from: "order_items",
+//             localField: "order_id",
+//             foreignField: "order_id",
+//             as: "order_items"
+//         }
+//     },
 
+//     {
+//         $unwind: "$order_items"
+//     },
 
+//     {
+//         $lookup: {
+//             from: "products",
+//             localField: "order_items.product_id",
+//             foreignField: "product_id",
+//             as: "product"
+//         }
+//     },
+
+//     {
+//         $unwind: "$product"
+//     },
+
+// ]);
+
+///////////////////////////////////////////////////
+// // 9
+// db.products.updateOne(
+//   { "product_id": "P0001" },
+//   { $set: { "product_quantity": 5 } }
+// )
+
+//////////////////////////////////////////////////
 // 10
-    
-    
-//     db.orders.aggregate([
+
+// db.customers.aggregate([
 //   {
-//     $lookup: {
-//       from: "customers",
-//       localField: "customer_id",
-//       foreignField: "customer_id",
-//       as: "customer"
+//     $match: {
+//       email: "virat17@gmail.com" // Replace with the customer's email
 //     }
 //   },
 //   {
-//     $unwind: "$customer"
+//     $lookup: {
+//       from: "orders",
+//       localField: "customer_id",
+//       foreignField: "customer_id",
+//       as: "orders"
+//     }
+//   },
+//   {
+//     $unwind: "$orders"
 //   },
 //   {
 //     $lookup: {
 //       from: "order_items",
-//       localField: "order_id",
+//       localField: "orders.order_id",
 //       foreignField: "order_id",
 //       as: "order_items"
 //     }
 //   },
 //   {
-//     $unwind: "$order_items"
-//   },
-//   {
-//     $lookup: {
-//       from: "products",
-//       localField: "order_items.product_id",
-//       foreignField: "product_id",
-//       as: "product"
+//     $project: {
+//       _id: 0,
+//       customer_id: 1,
+//       order_id: "$orders.order_id",
+//       order_date: "$orders.order_date",
+//       total_price: "$orders.total_price",
+//       order_items: "$order_items"
 //     }
-//   },
-//   {
-//     $unwind: "$product"
-//   },
- 
-    
-    
+//   }
+// ])
+
+//////////////////////////////////////////
+
 // 11
-    
+
 //     db.products.aggregate([
 //   {
 //     $match: {category: "5G"}
@@ -211,16 +218,5 @@
 //   }
 // ])
 
-
 // 12
 // db.orders.deleteOne({ order_id: "ORD01" });
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
