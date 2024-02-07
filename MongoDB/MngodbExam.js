@@ -171,7 +171,7 @@
 // db.customers.aggregate([
 //   {
 //     $match: {
-//       email: "virat17@gmail.com" // Replace with the customer's email
+//       email: "virat17@gmail.com" 
 //     }
 //   },
 //   {
