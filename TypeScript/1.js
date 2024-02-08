@@ -58,7 +58,6 @@
 //  Result();
 ////////////////////////////////////////////////////
 // function revNum(){
-// // let num = prompt ("Enter The Any Numbers :-",num);
 // let num = 234;
 // let  rev = 0;
 // while(num != 0)
@@ -70,14 +69,13 @@
 // }
 // revNum();
 ////////////////////////////////////
-function odd() {
-    // let number = prompt("Enter The Any Number ");
-    var number = 26;
-    if (number % 2 == 0) {
-        console.log("This Is A Even Number :- ", number);
-    }
-    else {
-        console.log("This Is A Odd Number :- ", number);
-    }
-}
-odd();
+// function odd() {
+//     var number = 26;
+//     if (number % 2 == 0) {
+//         console.log("This Is A Even Number :- ", number);
+//     }
+//     else {
+//         console.log("This Is A Odd Number :- ", number);
+//     }
+// }
+// odd();
