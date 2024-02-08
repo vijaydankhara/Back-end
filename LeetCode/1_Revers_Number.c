@@ -1,18 +1,11 @@
-#include<stdio.h>
-
-int main()
-{
-    int number = 123;
-    int x = 0;
-    
-    while(number != 0)
+long double reverse(int x){
+   long double n=0;
+    while(x != 0)
     {
-        x = x * 10 + number % 10;   //  0 * 10 + 3 = 3   3 * 10 + 2 = 32    32 * 10 + 1 = 321
+        n = n * 10 + x % 10;      
 
-        number = number / 10;     // 3 / 10 = 0  32 / 10 = 3  321 / 10 = 32
+        x = x / 10;    
     }
-    
-    printf("Reversed Number: %d", x);
-    
-    return 0;
+    return n;
+
 }

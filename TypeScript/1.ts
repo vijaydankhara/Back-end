@@ -60,8 +60,57 @@
 // }
 // votting();
 
+// function Result(){
+// let n = "shital Gajera";
+// console.log("\n Name Of Student :- ",n);
 
+// let Guj = 91;
+// console.log("\n gujarati mark :-",Guj);
 
+// let eng = 87;
+// console.log("\n english mark :-",eng);
+
+// let sci = 76;
+// console.log("\n science mark :-",sci);
+ 
+// let total = Guj + eng + sci ;
+// console.log("\n Total mark :- ",total);
+
+// let per = (total / 300) * 100;
+// console.log("\n percentage :- ",per);
+//  }
+//  Result();
+
+////////////////////////////////////////////////////
+
+// function revNum(){
+// // let num = prompt ("Enter The Any Numbers :-",num);
+// let num = 234;
+// let  rev = 0;
+
+// while(num != 0)
+// {
+// rev = rev * 10 + num % 10;
+// num = num / 10 ;
+// }
+// console.log("This Is A Reverce Number :- ",rev);
+// }
+// revNum();
+
+////////////////////////////////////
+
+function odd() {
+    // let number = prompt("Enter The Any Number ");
+    let number = 26;
+    if (number % 2 == 0)
+    {
+      console.log("This Is A Even Number :- ",number);
+    } else {
+      console.log("This Is A Odd Number :- ",number);
+    }
+  }
+  
+  odd();
 
 
 
