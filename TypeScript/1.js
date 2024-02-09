@@ -58,6 +58,7 @@
 //  Result();
 ////////////////////////////////////////////////////
 // function revNum(){
+// // let num = prompt ("Enter The Any Numbers :-",num);
 // let num = 234;
 // let  rev = 0;
 // while(num != 0)
@@ -69,13 +70,42 @@
 // }
 // revNum();
 ////////////////////////////////////
-// function odd() {
-//     var number = 26;
-//     if (number % 2 == 0) {
-//         console.log("This Is A Even Number :- ", number);
-//     }
-//     else {
-//         console.log("This Is A Odd Number :- ", number);
-//     }
+function odd() {
+    // let number = prompt("Enter The Any Number ");
+    var number = 26;
+    if (number % 2 == 0) {
+        console.log("This Is A Even Number :- ", number);
+    }
+    else {
+        console.log("This Is A Odd Number :- ", number);
+    }
+}
+odd();
+/////////////////////////////////////////////////////
+//  ==> ||  FUNCTION     || <==
+// function add(x: number, y: number) : number 
+// {
+//     return x + y;
 // }
-// odd();
+// console.log(add(2,5));
+// console.log(add(2,'5')); // output:- 25 
+/////////////////////////////////////////////////////
+//  ==> || INTERFACE || <==
+// interface hello{            
+//     name : string
+//     email ?: string         // ? : optional type
+//     age : number
+// }
+// let person : hello = {
+//     name: 'shital',
+//     age: 24
+//     // job: 'Doctor'
+// }
+// console.log(person);
+/////////////////////////////////////////////////////////////
+//  ==> || ENUM || <==
+// enum gender {            // enum:- specific things two out off one
+//     'male', 'female'
+// }
+// let x = gender.male;
+// console.log(x);         //output:- return index number

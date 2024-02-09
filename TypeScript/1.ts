@@ -112,5 +112,44 @@ function odd() {
   
   odd();
 
+/////////////////////////////////////////////////////
+
+//  ==> ||  FUNCTION     || <==
+
+// function add(x: number, y: number) : number 
+// {
+//     return x + y;
+// }
+
+// console.log(add(2,5));
+// console.log(add(2,'5')); // output:- 25 
+
+/////////////////////////////////////////////////////
+//  ==> || INTERFACE || <==
+
+// interface hello{            
+//     name : string
+//     email ?: string         // ? : optional type
+//     age : number
+// }
+
+// let person : hello = {
+//     name: 'shital',
+//     age: 24
+//     // job: 'Doctor'
+// }
+// console.log(person);
+
+/////////////////////////////////////////////////////////////
+
+//  ==> || ENUM || <==
+
+// enum gender {            // enum:- specific things two out off one
+//     'male', 'female'
+// }
+
+// let x = gender.male;
+// console.log(x);         //output:- return index number
+
 
 
