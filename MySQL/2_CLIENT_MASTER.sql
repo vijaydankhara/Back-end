@@ -19,3 +19,5 @@ insert into CLIENT_MASTER(ClientNo,CName,Address1,Address2,City,Pincode,CState,C
 
 
 -- select * from CLIENT_MASTER;
+
+
