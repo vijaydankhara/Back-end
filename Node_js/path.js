@@ -21,7 +21,6 @@ const path = require('path');
 //     ext:'.js'
 // }))      // D:\Back-end\Node_js\path.js\path.js
 
-
 // console.log(path.posix);
-// console.log(path.delimiter);    // ;
-// console.log(path.sep);   // \
+// console.log(path.delimiter);  
+// console.log(path.sep);   
