@@ -58,12 +58,14 @@ app.on('request', (req, res) => {
         let id = Number(items[2]);
         let product = data [id-1];
         res.end(JSON.stringify(product));
-    }else{
-        res.setHeader('Content-type', 'text/html');
+    }else
+    res.end(JSON.stringify(data));
+}else{
+    res.setHeader('Content-type', 'text/html');
     res.write('<h3 style="color:red">Page Not Found </h3>');
     res.end();
     }
-}
+
     })
 
 
