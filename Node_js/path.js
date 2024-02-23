@@ -1,6 +1,6 @@
 // Path Module
 
-const path = require('path');
+// const path = require('path');
 
 // console.log(path.basename('D:\Back-end\Node_js/path.js'))   // path.js
 
@@ -24,3 +24,6 @@ const path = require('path');
 // console.log(path.posix);
 // console.log(path.delimiter);  
 // console.log(path.sep);   
+
+
+
