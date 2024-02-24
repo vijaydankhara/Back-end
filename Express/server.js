@@ -37,8 +37,7 @@ server.put('/',(req,res)=>{
     res.status(400).json({message: 'Put Method Call'});
 });
 server.patch('/',(req,res)=>{
-    // res.sendFile(path.join(__dirname,'abc.txt'));
-    res.sendFile(path.join(__dirname,'ab.html'));
+    res.sendFile(path.join(__dirname,'abc.txt'));
 });
 server.delete('/',(req,res)=>{
     res.sendStatus(201);
